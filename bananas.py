@@ -79,3 +79,4 @@ while True:
             print("acho que tu errou")
     else:
         print ("erro")
+print("obrigado por usar o sistema")
