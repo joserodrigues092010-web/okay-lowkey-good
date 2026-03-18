@@ -3,7 +3,7 @@ produtos = ["arroz","feijao","cereais","pizza","chocolate"]
 stock = [8,4,7,10,2]
 print(produtos)
 while True:
-    perfil = input("Você é um comprador ou um admin?\n ")
+    perfil = input("Você é um \033[32mcomprador\033[0m ou um \033[34madmin\033[0m?\n ")
     if perfil == "comprador":
         print ("se quiser parar digite (end)")
         while True:
@@ -56,7 +56,7 @@ while True:
                 elif pergunta == 3:
                     qual4= input("qual produto desejas tirar?")
                     if qual4 in produtos:
-                        qual5= int("qual é a quantidade? digite o caractere zero ´0` se quiser retirar do base de dados")
+                        qual5= int(input("qual é a quantidade? digite o caractere zero ´0` se quiser retirar do base de dados"))
                         if qual5== 0:
                             pos1 = produtos.index(qual4)
                             produtos.remove(pos1)
@@ -79,4 +79,3 @@ while True:
             print("acho que tu errou")
     else:
         print ("erro")
-print("obrigado por usar o sistema")
